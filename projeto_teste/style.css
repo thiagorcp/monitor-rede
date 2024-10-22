@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+header {
+  background-color: #107986;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mapa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playButton{
+  display: none;
+}
