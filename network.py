@@ -1,4 +1,4 @@
-import scappy
+
 
 def enviar_pacotes_icmp():
     pass
