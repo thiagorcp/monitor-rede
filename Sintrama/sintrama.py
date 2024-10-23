@@ -16,9 +16,13 @@ def assistant_speak(text):
     while pygame.mixer.music.get_busy():
         continue
 
+    pygame.quit()
+
 
 def fala():
     assistant_speak('DNS')
+
+    os.remove(f'{diretorio}/{filename}')
 
 
 fala()
