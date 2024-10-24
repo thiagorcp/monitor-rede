@@ -23,6 +23,3 @@ def fala():
     assistant_speak('DNS')
 
     os.remove(f'{diretorio}/{filename}')
-
-
-fala()
