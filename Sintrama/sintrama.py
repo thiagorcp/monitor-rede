@@ -5,7 +5,7 @@ diretorio = os.path.dirname(os.path.abspath(__file__))
 filename = 'audio.mp3'
 
 def fala(texto):
-    tts = gTTS(text, lang='pt')
+    tts = gTTS(texto, lang='pt')
     tts.save(f'{diretorio}/{filename}')
 
 
