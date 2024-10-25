@@ -1,4 +1,5 @@
 import subprocess
+import json
 
 def envia_pings(host):
     """
@@ -12,13 +13,11 @@ def envia_pings(host):
     comando_ping = "ping -n 1 -w 2 " + host
 
     resposta_do_host = subprocess.run(comando_ping, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    return resposta_do_host.returncode
     
 
-    if resposta_do_host.returncode == 0:
-        print(f"{host}: Está ativo!")
-    else:
-        print(f"{host}: Não respondeu!")
-    
+def get_status_host():
 
 
 if __name__ == "__main__":
