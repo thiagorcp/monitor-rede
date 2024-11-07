@@ -4,8 +4,6 @@ import ips
 ips = ips.host_rede()
 link = "https://www.youtube.com/watch?v=R26iojTwUv8"
 def envia_pings():
-    host_test = "10.0.162.253"
-
 
     while True:
         for chave, valor in ips.items():
