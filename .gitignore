@@ -8,3 +8,5 @@ settings.json
 .venv
 
 ips.py
+
+.idea
