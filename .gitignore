@@ -11,5 +11,6 @@ ips.py
 
 .idea
 
-hosts_local.json
+hosts_local_parque.json
+hosts_local_campus.json
 ips_test.json
