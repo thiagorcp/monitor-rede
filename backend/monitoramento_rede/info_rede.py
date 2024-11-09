@@ -12,11 +12,10 @@ def envia_ping():
 
     if platform.system().lower() == 'windows':
         cmd = "ping " + "-n" + " 1 "
-        for k, v in ips_test.items():
-            print(k, v)
-        #output_subprocess = subprocess.run(args=(cmd + ip), capture_output=True, text=True, timeout=2)
+        for host, ip in ips_test.items():
+            output_subprocess = subprocess.run(args=(cmd + ip), capture_output=True, text=True, timeout=2)
 
-        return ""
+        return output_subprocess.returncode
 
 
 
