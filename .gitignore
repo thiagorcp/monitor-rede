@@ -10,3 +10,6 @@ settings.json
 ips.py
 
 .idea
+
+hosts_local.json
+ips_test.json
