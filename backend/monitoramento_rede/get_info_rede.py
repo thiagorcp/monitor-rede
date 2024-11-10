@@ -7,3 +7,6 @@ resp_host = get_status_hosts()
 @app.route("/status-rede", methods=['GET'])
 def get_status_rede():
     return jsonify(resp_host)
+
+if __name__ == "__main__":
+    app.run(port=5000, debug=True)
